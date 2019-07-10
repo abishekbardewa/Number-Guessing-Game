@@ -1,5 +1,5 @@
 let min = 1,
-    max = 10,
+    max = 15,
     winningNum = getRandomNum(min, max),
     guessesLeft = 3;
 
@@ -83,16 +83,11 @@ function gameOver(won, msg){
     //Play Again 
     guessBtn.value = 'Play Again';
     guessBtn.className += 'play-again';
-
-   
-
 }
 
 function setMessage(msg,color){
     message.textContent = msg;
     message.style.color = color;
-    
-
 }
 // Get Winning Number
 function getRandomNum(min, max){
